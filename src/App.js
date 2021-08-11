@@ -61,7 +61,7 @@ const Outer = () => {
         My todos:
         <ul>
           {myTodos.map((todo) => (
-            <li>{todo}</li>
+            <li key={todo}>{todo}</li>
           ))}
         </ul>
         <input id="myInput" />
