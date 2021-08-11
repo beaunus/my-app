@@ -2,11 +2,6 @@ import "./App.css";
 import React from "react";
 
 class Top extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { date: new Date() };
-  }
-
   componentDidMount() {
     console.log("Top componentDidMount");
   }
@@ -21,11 +16,6 @@ class Top extends React.Component {
 }
 
 class Bottom extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { date: new Date() };
-  }
-
   componentDidMount() {
     console.log("Bottom componentDidMount");
   }
