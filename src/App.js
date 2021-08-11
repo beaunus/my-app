@@ -55,6 +55,14 @@ const Outer = () => {
       Show Bottom
       {state.showTop ? <Top /> : null}
       {state.showBottom ? <Bottom /> : null}
+      <div>
+        My todos:
+        <ul>
+          <li>Wake</li>
+          <li>Clean</li>
+          <li>Eat</li>
+        </ul>
+      </div>
     </>
   );
 };
