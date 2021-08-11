@@ -28,6 +28,8 @@ const Bottom = () => {
 const Outer = () => {
   const [state, setState] = React.useState({ showTop: true, showBottom: true });
 
+  const myTodos = ["Wake", "Clean", "Eat"];
+
   React.useEffect(() => {
     console.log("Outer.useEffect");
     return () => {
@@ -58,9 +60,9 @@ const Outer = () => {
       <div>
         My todos:
         <ul>
-          <li>Wake</li>
-          <li>Clean</li>
-          <li>Eat</li>
+          {myTodos.map((todo) => (
+            <li>{todo}</li>
+          ))}
         </ul>
       </div>
     </>
