@@ -13,19 +13,17 @@ const Top = () => {
   return <div>Top</div>;
 };
 
-class Bottom extends React.Component {
-  componentDidMount() {
+const Bottom = () => {
+  React.useEffect(() => {
     console.log("Bottom componentDidMount");
-  }
 
-  componentWillUnmount() {
-    console.log("Bottom componentWillUnmount");
-  }
+    return () => {
+      console.log("Bottom componentWillUnmount");
+    };
+  });
 
-  render() {
-    return <div>Bottom</div>;
-  }
-}
+  return <div>Bottom</div>;
+};
 
 class Outer extends React.Component {
   constructor(props) {
