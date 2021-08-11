@@ -1,7 +1,17 @@
 import "./App.css";
 import React from "react";
 
-const Top = () => <div>Top</div>;
+const Top = () => {
+  React.useEffect(() => {
+    console.log("useEffect called");
+
+    return () => {
+      console.log("the function that useEffect returns");
+    };
+  });
+
+  return <div>Top</div>;
+};
 
 class Bottom extends React.Component {
   componentDidMount() {
