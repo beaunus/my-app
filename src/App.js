@@ -64,6 +64,15 @@ const Outer = () => {
             <li>{todo}</li>
           ))}
         </ul>
+        <input id="myInput" />
+        <button
+          onClick={() => {
+            const theElement = document.getElementById("myInput");
+            setMyTodos(myTodos.concat([theElement.value]));
+          }}
+        >
+          ADD TODO
+        </button>
       </div>
     </>
   );
