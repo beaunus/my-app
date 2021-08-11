@@ -8,7 +8,7 @@ const Top = () => {
     return () => {
       console.log("the function that useEffect returns");
     };
-  });
+  }, []);
 
   return <div>Top</div>;
 };
@@ -20,7 +20,7 @@ const Bottom = () => {
     return () => {
       console.log("Bottom componentWillUnmount");
     };
-  });
+  }, []);
 
   return <div>Bottom</div>;
 };
