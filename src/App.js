@@ -1,19 +1,7 @@
 import "./App.css";
 import React from "react";
 
-class Top extends React.Component {
-  componentDidMount() {
-    console.log("Top componentDidMount");
-  }
-
-  componentWillUnmount() {
-    console.log("Top componentWillUnmount");
-  }
-
-  render() {
-    return <div>Top</div>;
-  }
-}
+const Top = () => <div>Top</div>;
 
 class Bottom extends React.Component {
   componentDidMount() {
