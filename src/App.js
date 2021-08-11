@@ -28,7 +28,7 @@ const Bottom = () => {
 const Outer = () => {
   const [state, setState] = React.useState({ showTop: true, showBottom: true });
 
-  const myTodos = ["Wake", "Clean", "Eat"];
+  const [myTodos, setMyTodos] = React.useState(["Wake", "Clean", "Eat"]);
 
   React.useEffect(() => {
     console.log("Outer.useEffect");
