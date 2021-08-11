@@ -28,6 +28,13 @@ const Bottom = () => {
 const Outer = () => {
   const [state, setState] = React.useState({ showTop: true, showBottom: true });
 
+  React.useEffect(() => {
+    console.log("Outer.useEffect");
+    return () => {
+      console.log("Outer cleanup");
+    };
+  }, []);
+
   return (
     <>
       <input
